@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/visuals/recipes.css">
+    <title>{{recipe.title}}</title>
+{% endblock %}
+
+{% block links %}
+    <div class="links">
+        <div>
+            <a href="/about">Sobre</a>
+        </div>
+
+        <div class="here" id="recipe">
+            <a href="/recipes">Receitas</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="table">
+
+        <div class="cards">
+
+            {% for item in recipes %}
+
+                <div class="card" id="burger">
+
+                    <div class="image-card">
+                        <img src="{{item.image}}" alt="Imagem do {{item.title}}">
+                    </div>
+
+                    <div class="content-card">
+
+                        <div class="text">
+                            <h1>{{item.title}}</h1>
+                            <p>{{item.author}}</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    <script src="/scripts/recipes.js"></script>
+{% endblock %}

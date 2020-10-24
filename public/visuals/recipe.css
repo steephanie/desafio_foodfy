@@ -1,0 +1,175 @@
+body {
+  font-family: Roboto;
+}
+
+.here a {
+  border-bottom: 2px solid var(--color-black);
+  font-weight: bold;
+}
+
+.principal {
+  margin-top: 50px;
+}
+
+.image-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-principal img {
+  border-radius: 15px;
+  height: 280px;
+  width: 940px;
+}
+
+.text {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 36px;
+  color: var(--color-black);
+  line-height: 42px;
+}
+
+.title p {
+  font-size: 20px;
+  color: var(--color-gray);
+  line-height: 24px;
+}
+
+.details {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+}
+
+.subtitle1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subtitle1 h1 {
+  font-size: 24px;
+  color: var(--color-black);
+  margin-right: 8px;
+  line-height: 28px;
+}
+
+.subtitle1 span {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-cop);
+  align-self: flex-end;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.ingredients li {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.preparation {
+  margin-top: 39px;
+}
+
+.subtitle2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subtitle2 h1 {
+  color: var(--color-black);
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: 8px;
+}
+
+.subtitle2 span {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-cop);
+  align-self: flex-end;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.preparation li {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.info {
+  margin-top: 39px;
+}
+
+.subtitle3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subtitle3 h1 {
+  color: var(--color-black);
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: 8px;
+}
+
+.subtitle3 span {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-cop);
+  align-self: flex-end;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.info li {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 28px;
+  list-style: none;
+}
+
+/* ====button====*/
+.button1 {
+  cursor: pointer;
+}
+
+.button2 {
+  cursor: pointer;
+}
+
+.button3 {
+  cursor: pointer;
+}
+.data1.active {
+  display: none;
+}
+
+.data2.active {
+  display: none;
+}
+
+.data3.active {
+  display: none;
+}

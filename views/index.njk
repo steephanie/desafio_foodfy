@@ -1,0 +1,68 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/visuals/index.css">
+    <title>{{index.title}}</title>
+{% endblock %}
+
+{% block links %}
+    <div class="links">
+        <div>
+            <a href="/about">Sobre</a>
+        </div>
+
+        <div id="recipe">
+            <a href="/recipes">Receitas</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <main>
+
+            <div class="text-main">
+                <h1>{{index.slogan}}</h1>
+                <p>{{index.info}}</p>
+            </div>
+
+            <div class="pet">
+                <img src="/assets/{{index.pet}}.png" alt="Imagem do {{item.title}}">
+            </div>
+
+        </main>
+    </div>
+
+    <h1 class="subtitle">{{index.text}}</h1>
+
+    <section class="table">
+
+        <div class="cards">
+            {% for item in recipes %}
+                {% if loop.index0 < 6 %}
+
+                    <div class="card" id="burger">
+
+                        <div class="image-card">
+                            <img src="{{item.image}}" alt="Imagem do {{item.title}}">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="text">
+                                <h1>{{item.title}}</h1>
+                                <p>{{item.author}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+    </section>
+
+    <script src="./scripts/index.js"></script>
+{% endblock %}
