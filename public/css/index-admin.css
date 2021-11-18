@@ -1,0 +1,71 @@
+/* === LIST OF RECIPES CARDS IN THE ADMIN SESSION */
+
+.admin .head-recipes {
+  width: 940px;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin .wrapper-grid {
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  box-sizing: border-box;
+  padding-top: 4.5rem;
+
+  column-gap: 75px;
+  row-gap: 25px;
+  align-items: center;
+
+  margin-bottom: 0;
+}
+
+.card-content.recipes {
+  display: grid;
+  grid-template: 1fr / 172px 1fr;
+  column-gap: 20px;
+}
+
+.card-content.recipes > span {
+  width: 172px;
+  height: 80px;
+
+  border-radius: 8.57px;
+  box-shadow: 1px 0px 3px 2px #ccc;
+
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.card-content h2 {
+  font-size: 16px;
+  line-height: 21px;
+
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: #6558c3;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}

@@ -1,0 +1,95 @@
+.all.admin {
+  width: 100%;
+  min-width: 940px;
+  min-height: calc(100% - 50px);
+  padding: 0;
+}
+
+.admin {
+  padding: 0 0 60px 231px;
+
+  box-sizing: border-box;
+}
+
+.all.admin header {
+  background-color: black;
+  max-width: 100%;
+  max-height: 80px;
+
+  box-sizing: border-box;
+  margin-bottom: 3.1rem;
+}
+
+.menu.admin {
+  width: 100%;
+  padding: 0 30px 0 231px;
+  max-height: 80px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu.admin div {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.menu.admin ul {
+  width: 100%;
+}
+
+.menu.admin ul li a {
+  color: #999999;
+
+  font-size: 0.95rem;
+  line-height: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu.admin ul li .activated,
+.menu.admin ul li a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.all nav img {
+  box-sizing: border-box;
+  padding: 25px;
+  padding-left: 0;
+}
+
+.menu.admin .logout {
+  width: fit-content;
+  position: absolute;
+
+  right: 1.9rem;
+}
+
+.menu.admin div a {
+  width: fit-content;
+
+  font-size: 0.95rem;
+  line-height: 1.1rem;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.menu.admin div a:hover {
+  color: #999999;
+}
+
+.admin .recipe {
+  padding-top: 0;
+}

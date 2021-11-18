@@ -1,0 +1,160 @@
+/* === USER PROFILE === */
+
+.admin .form.user .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 4rem;
+}
+
+.admin .form.user .head .button {
+  outline: none;
+}
+
+.admin .form.user {
+  width: 940px;
+  position: relative;
+}
+
+.admin .form.user .fields .item {
+  width: 28rem;
+}
+
+.admin .form.user .fields .info-user {
+  display: flex;
+  gap: 40px;
+
+  box-sizing: border-box;
+  padding-bottom: 2.2rem;
+}
+
+/* === END OF USER PROFILE === */
+
+/* === USERS LIST === */
+
+.admin .head-users {
+  width: 940px;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin .list-users {
+  width: 940px;
+  box-sizing: border-box;
+
+  padding-top: 4.5rem;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3.4rem;
+}
+
+.card-user {
+  box-sizing: border-box;
+}
+
+.card-user .name {
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+  padding-bottom: 0.25rem;
+
+  color: #111111;
+}
+
+.card-user .email {
+  font-size: 0.9rem;
+  line-height: 1.05rem;
+  padding-bottom: 1rem;
+
+  color: #777777;
+}
+
+.card-user .buttons {
+  display: flex;
+
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-user .buttons a {
+  font-size: 0.9rem;
+  line-height: 1.05rem;
+  font-weight: bold;
+
+  color: #6558c3;
+
+  text-decoration: none;
+}
+
+.card-user .buttons button {
+  font-size: 0.9rem;
+  line-height: 1.05rem;
+  font-weight: bold;
+
+  background-color: white;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  color: #f55a5a;
+}
+
+/* === END OF LIST USERS === */
+
+/* === EDIT USER === */
+
+.form.user .button-wrapper {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  gap: 1rem;
+}
+
+.form.user .fields .line-wrapper {
+  display: flex;
+  gap: 3.4rem;
+}
+
+.form.user .fields .adm #is_admin {
+  cursor: pointer;
+}
+
+.form.user .fields .adm {
+  padding-top: 2rem;
+}
+
+.form.user .fields .adm label {
+  font-size: 1rem;
+  line-height: 1.15rem;
+  font-weight: bold;
+  color: #111111;
+
+  cursor: pointer;
+}
+
+/* === CREATE USER === */
+
+.form.user .button-wrapper .button-cancel {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #8a8a8a;
+}
+
+.form.user .button-wrapper .button-cancel:hover {
+  background: #dc4747;
+
+  transition: 100ms ease-in-out;
+}

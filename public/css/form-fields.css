@@ -1,0 +1,211 @@
+/* === FORM AND ITS FIELDS ===*/
+
+.recipe .form {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.form .delete {
+  position: absolute;
+
+  top: 1px;
+  right: 165px;
+}
+
+.recipe .fields,
+.recipe #chefs {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* === IMAGES-UPLOAD INPUT AND WRAPPER === */
+
+.fields .item .images-wrapper {
+  width: 100%;
+  height: 150px;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: left;
+}
+
+.fields .item .images-upload,
+.fields .item .images-upload input {
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+}
+.fields .item .images-upload input {
+  z-index: 100;
+
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fields .item .images-upload div {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #dddddd;
+  border-radius: 3.5px;
+  border-radius: 3, 5px;
+
+  position: relative;
+  box-sizing: border-box;
+}
+
+.fields .item .images-upload div i {
+  font-size: 35px;
+  color: #777777;
+  position: absolute;
+
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+}
+
+.fields .item .preview-images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+  box-sizing: border-box;
+}
+
+.fields .item .preview-images div {
+  width: 100%;
+  height: 150px;
+
+  position: relative;
+
+  border: 1px solid #dddddd;
+  border-radius: 3.5px;
+  border-radius: 3, 5px;
+
+  background-color: yellow;
+
+  box-sizing: border-box;
+}
+
+.fields .item .preview-images div img {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.fields .item .preview-images i {
+  position: absolute;
+
+  font-size: 40px;
+  color: #ff0000;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #dddddd;
+  opacity: 0;
+
+  cursor: pointer;
+
+  transition: 200ms;
+}
+
+.fields .item .preview-images i:hover {
+  opacity: 0.6;
+}
+
+/* === ALL THE OTHER FIELDS (INPUTS) OF FORM === */
+
+.fields .item {
+  margin-top: 30px;
+  max-width: 950px;
+}
+
+.fields .item input,
+.item #chefs {
+  width: 100%;
+  height: 49px;
+
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  outline: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+#chefs option:first-child {
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+}
+
+#chefs option {
+  color: #444444;
+}
+
+.fields .item div:first-child {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.fields .item .ingredient,
+.item .step {
+  margin-bottom: 10px;
+}
+
+.item:last-child textarea {
+  width: 100%;
+  height: 257px;
+  box-sizing: border-box;
+
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  padding: 15px 20px;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* === FORM OF CHEFS === */
+
+.fields .chef-avatar {
+  max-width: 940px;
+  min-height: 50px;
+
+  display: flex;
+
+  box-sizing: border-box;
+
+  align-items: center;
+  gap: 30px;
+}

@@ -1,0 +1,49 @@
+@keyframes hidemessage {
+  to {
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+.messages {
+  position: absolute;
+  width: 21.5rem;
+  height: 8.4rem;
+  padding: 1rem 3rem 1rem 3rem;
+
+  text-align: center;
+
+  box-sizing: border-box;
+
+  right: 1.8rem;
+  top: 1.2rem;
+
+  border-radius: 0.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  opacity: 1;
+
+  z-index: 100;
+
+  animation: hidemessage 400ms 5s ease-out forwards;
+}
+
+.messages p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+
+  color: #ffffff;
+}
+
+.messages.success {
+  background-color: #01b12a;
+}
+
+.messages.error {
+  background-color: #dc4747;
+}
