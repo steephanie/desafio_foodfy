@@ -16,6 +16,8 @@ Este repositório é referente ao desafio '**Construindo o Foodfy**' do bootcamp
 Foi proposto que fosse construído um site completo para uma empresa de receitas chamada **Foodfy**.
 - [Desafio](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md) 🚀
 
+
+
 ---
 ## 💻 Tecnologias utilizadas 
 
@@ -29,39 +31,18 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 ___
 ## 📥 Como baixar o projeto
 
-  - Clonar o projeto:
 ```bash
-  $ git clone https://github.com/
+# Clone this repository
+$ git clone https://github.com/steephanie/desafio_foodfy.git
+
+# Go into the repository
+$ cd desafio_foodfy
+
+# Install dependencies
+$ npm install
+
+# Run
+$ npm start
+
+# running on port 3000
 ```
-- Entrar na pasta do projeto:
-```bash
-  $ cd NomedaPasta
-```
-- Após instalar o Node.js, executar o npm:
-```bash
-  $ npm init -y
-```
-- Instalar o Express:
-```bash
-  $ npm install express
-```
-- Instalar o Nodemon:
-```bash
-  $ npm install -D nodemon  
-```
-- Caso esteja com algum erro configure o script do arquivo package.json assim:
-```json
-  "scripts": {
-      "start": "nodemon server.js"
-    }
-```
-- Instalar o Nunjucks:
-```bash
-  $ npm install nunjucks
-```
- - Execução:
- ```bash
-  $ npm start
-```
-___
-Desenvolvido por : Stephanie Nascimento
