@@ -1,7 +1,11 @@
-<h1 align="center">
-    <img src="public/assets/logo.png">
-    <img src="public/assets/chef.png">
-</h1>
+  <h1 align="center">Foodfy</h1>
+  <img src="https://user-images.githubusercontent.com/62578862/112757494-4b045500-8fc0-11eb-9d4b-c4afd079b0a6.png" height ="150" width="150">
+
+</div>
+
+<h4 align="center">
+  LaunchBase 🚀
+</h4>
 
 
 ## 🔖 Sobre 
