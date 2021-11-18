@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/img-app/119236-OQ05QX-268.png" type="image/x-icon">
+    {% include "./parts/stylesheets.njk" %}
+
+
+{% block head %}
+    <title>Foodfy</title>
+{% endblock %}
+
+</head>
+<body>
+    <div class="all">
+
+      {% include "./parts/messages.njk"%}
+      {% include "./parts/header.njk"%}
+
+      {% block content %}{% endblock %}
+
+    </div>
+
+    {% include "./parts/footer.njk"%}
+
+    {% block scripts %}{% endblock scripts %}
+    <script src="/new-scripts.js"></script>
+</body>
+</html>

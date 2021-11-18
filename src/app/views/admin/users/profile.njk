@@ -1,0 +1,69 @@
+{% extends "../layout-admin.njk" %} {% block head %}
+
+<title>Admin - Editando perfil</title>
+
+{% endblock head %} {% block content %}
+
+<div class="admin">
+  <div class="form user">
+    <form method="POST" action="/admin/profile?_method=PUT">
+      <div class="head">
+        <div>
+          <span><h1>Bem vindo {{user.name}}</h1></span>
+        </div>
+        <div class="button-wrapper">
+          <button
+            class="button"
+            type="submit"
+            onClick="confirmationOfButtons.verifyingBeforeUpdateUser(event)"
+          >
+            <span>Salvar</span>
+          </button>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="info-user">
+          <div class="item">
+            <div>Nome</div>
+            <div class="input">
+              <input
+                type="text"
+                name="name"
+                placeholder="Digite o seu nome"
+                value="{{user.name}}"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div>Email</div>
+            <div class="input">
+              <input
+                type="text"
+                name="email"
+                placeholder="Digite o seu email"
+                value="{{user.email}}"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div>Senha</div>
+          <div class="input">
+            <input
+              type="password"
+              name="password"
+              placeholder="Digite a sua senha"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% if input %}
+  <div class="inputBack-end" style="display:none">{{input}}</div>
+  <script src="/validationForms.js">
+  </script>
+{% endif %}
+
+{% endblock content %}

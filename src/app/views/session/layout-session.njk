@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/img-app/119236-OQ05QX-268.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/session.css">
+    <link rel="stylesheet" href="/messages.css">
+
+{% block head %}
+    <title>Foodfy</title>
+{% endblock %}
+
+</head>
+<body>
+    {%include "../parts/messages.njk"%}
+    <div class="session">
+      <div class="logo">
+        <a href="/"><img src="/img-app/logo.png" alt="logo do site"></a>
+      </div>
+
+      {% block content %}{% endblock %}
+
+    {% if input %}
+      <div class="inputBack-end" style="display:none">{{input}}</div>
+      <script src="/validationForms.js">
+      </script>
+    {% endif %}
+
+      <div class="push"></div>
+
+    </div>
+
+    {% include "../parts/footer.njk"%}
+
+    {% block scripts %}{% endblock scripts %}
+    <script src="/new-scripts.js"></script>
+</body>
+</html>

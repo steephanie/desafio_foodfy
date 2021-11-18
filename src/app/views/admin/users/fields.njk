@@ -1,0 +1,23 @@
+<div class="line-wrapper">
+  <div class="item">
+      <div>Nome</div>
+      <div>
+        <input type="text" name="name" placeholder="Digite o seu nome" value="{{user.name}}">
+      </div>
+  </div>
+  <div class="item">
+      <div>Email</div>
+      <div>
+        <input type="text" name="email" placeholder="Digite o seu email" value="{{user.email}}">
+      </div>
+  </div>
+</div>
+<div class="adm">
+    <input type="checkbox" id="is_admin" name="is_admin" {% if user.is_admin %} checked {% endif %}>
+    <label for="is_admin">Administrador</label>
+</div>
+{% if input %}
+  <div class="inputBack-end" style="display:none">{{input}}</div>
+  <script src="/validationForms.js">
+  </script>
+{% endif %}

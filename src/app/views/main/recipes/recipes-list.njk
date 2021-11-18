@@ -1,0 +1,21 @@
+{% extends "../../layout-main.njk" %}
+
+{% block content %}
+    <div id="filter"
+    data-filter = {{filter}}>
+    </div>
+    <div class="wrapper-grid">
+        <div class="cards">
+        {% for recipe in recipes %}
+
+            <div class="card" id="{{recipe.id}}">
+                <img src="{{recipe.file_path}}" alt="imagem de {{recipe.file_name}}">
+                <h2>{{recipe.title}}</h2>
+                <span><p>por <span>{{recipe.chef}}</span></p></span>
+            </div>
+
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}

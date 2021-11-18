@@ -1,0 +1,23 @@
+<header>
+  <nav class="menu">
+    <div>
+      <ul>
+        <li class="logo"><a href="/"><img src="/img-app/logo.png" alt="logo do site"></a></li>
+        <li><a href="/about">Sobre</a></li>
+        <li><a href="/recipes">Receitas</a></li>
+        <li><a href="/chefs">Chefs</a></li>
+      </ul>
+    </div>
+    <div class="filter">
+      <form action="/recipes" method="POST">
+        <input type="text" name="filter"
+        {% if filter %}
+            value="{{filter}}"
+        {%else%}
+            placeholder="Buscar receitas"
+        {% endif %}>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,26 @@
+<div class="fields">
+    <div class="item">
+        <div>Nome</div>
+        <div><input type="text" name="name" value="{{chef.name}}" required></div>
+    </div>
+    <div class="item">
+        <div>Avatar</div>
+    </div>
+    <div class="chef-avatar">
+      <input type="hidden" name="file_id" value="{{chef.file_id}}">
+      <input
+        class="avatar-image"
+        type="file"
+        name="avatar"
+        style="display:none"
+        accept="images/*"
+        onchange="uploadChefAvatar.handleFile(event)">
+      <p class="avatar" onclick="activatingInputFiles.activate()">Enviar Avatar</p>
+      <p id="avatar-img">{{chef.file_path}}</p>
+    </div>
+</div>
+{% if input %}
+  <div class="inputBack-end" style="display:none">{{input}}</div>
+  <script src="/validationForms.js">
+  </script>
+{% endif %}

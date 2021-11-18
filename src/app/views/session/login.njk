@@ -1,0 +1,31 @@
+{% extends "./layout-session.njk" %}
+
+{%block head%}
+  <title>FoodFy - Login</title>
+{%endblock head%}
+
+{% block content %}
+<div class="action"><p>Iniciar Sessão</p></div>
+<form action="/users/login" method="POST">
+  <div class="fields">
+      <div class="item">
+        <div>Email</div>
+        <div><input type="text" name="email" value="{{user.email}}" placeholder="Digite seu email" ></div>
+      </div>
+
+      <div class="item">
+        <div>Senha</div>
+        <div><input type="password" name="password" value="{{user.password}}" placeholder="Digite a sua senha" ></div>
+      </div>
+  </div>
+
+  <div class="buttons">
+    <div>
+      <a href="/users/forgot-password"><p>Perdeu a senha?</p></a>
+    </div>
+    <div>
+      <button type="submit">Acessar</button>
+    </div>
+  </div>
+</form>
+{% endblock content %}

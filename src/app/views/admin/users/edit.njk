@@ -1,0 +1,44 @@
+{% extends "../layout-admin.njk" %}
+
+{% block head %}
+
+<title>Admin - Editando perfil</title>
+
+{% endblock head %}
+
+{% block content %}
+
+<div class="admin">
+
+    <div class="form user">
+      <div class="delete">
+          <form method="POST" action="/admin/users?_method=DELETE">
+              <input type="hidden" name="id" value="{{user.id}}">
+              <button class="button-delete" type="submit" onClick="confirmationOfButtons.verifyingBeforeDeleteUser(event)">
+                <span>Deletar</span>
+              </button>
+          </form>
+        </div>
+        <form method="POST" action="/admin/users?_method=PUT">
+            <div class="head">
+                <div>
+                  <span><h1>Atualizar Usuário</h1></span>
+                </div>
+                <div class="button-wrapper">
+                    <button class="button" type="submit" onClick="confirmationOfButtons.verifyingBeforeUpdateUser(event)">
+                      <span>Salvar</span>
+                    </button>
+                </div>
+            </div>
+            <div class="fields">
+
+                {%include "./fields.njk"%}
+                <input type="hidden" name="id" value="{{user.id}}">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}
+

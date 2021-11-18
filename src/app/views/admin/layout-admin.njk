@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="/img-app/admin.svg" type="image/x-icon">
+    {%include "../parts/stylesheets.njk"%}
+
+
+{% block head %}
+    <title>Admin</title>
+{% endblock %}
+
+</head>
+<body>
+    <div class="all admin">
+      {% include "../parts/messages.njk"%}
+      {%include "../parts/header-admin.njk"%}
+      {% block content %}{% endblock %}
+
+    </div>
+
+    {%include "../parts/footer-admin.njk"%}
+    {% block scripts %}{% endblock %}
+
+    <script src="/new-scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "../layout-admin.njk" %}
+
+{% block head %}
+
+<title>Admin - chefs</title>
+
+{% endblock head %}
+
+{% block content %}
+<div class="admin">
+  <div id="chefs">
+    <div class="head-recipes">
+      <h1>Gerenciar chefs</h1>
+      <p><a class="button" href="/admin/chefs/create">Novo Chef</a></p>
+  </div>
+
+    <div class="wrapper-grid chefs">
+        {% for chef in chefs %}
+
+            <div class="card-content">
+                <span style="background-image: url({{chef.file_path}});"></span>
+                <div class="card-info">
+                    <h2>{{chef.name}}</h2>
+                    <a href="/admin/chefs/{{chef.id}}">Visualizar</a>
+                </div>
+            </div>
+
+        {% endfor %}
+      </div>
+  </div>
+
+
+</div>
+{% endblock content %}
+
