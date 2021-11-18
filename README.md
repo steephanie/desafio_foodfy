@@ -16,7 +16,11 @@ Este repositório é referente ao desafio '**Construindo o Foodfy**' do bootcamp
 Foi proposto que fosse construído um site completo para uma empresa de receitas chamada **Foodfy**.
 - [Desafio](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md) 🚀
 
+<div align="center">
 
+<img width="1604" alt="" src="https://user-images.githubusercontent.com/62578862/123466883-4141bc00-d5c6-11eb-904f-6c0ff410802b.png">
+
+</div>
 
 ---
 ## 💻 Tecnologias utilizadas 
